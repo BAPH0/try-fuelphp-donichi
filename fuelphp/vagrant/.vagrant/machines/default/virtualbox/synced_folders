@@ -1,0 +1,1 @@
+{"virtualbox":{"/mnt/fuelphp":{"mount_options":["dmode=777","fmode=666"],"guestpath":"/mnt/fuelphp","hostpath":"/Users/takayukiyagi/factory/php/fuelphp/sb-creative-book/fuelphp/fuelphp","disabled":false,"__vagrantfile":true}}}
