@@ -10,21 +10,6 @@ class Controller_Request extends Controller_Template
 
 	}
 
-	public function action_view($id = null)
-	{
-		is_null($id) and Response::redirect('request');
-
-		if ( ! $data['request'] = Model_Request::find($id))
-		{
-			Session::set_flash('error', 'Could not find request #'.$id);
-			Response::redirect('request');
-		}
-
-		$this->template->title = "Request";
-		$this->template->content = View::forge('request/view', $data);
-
-	}
-
 	public function action_create()
 	{
 		if (Input::method() == 'POST')
