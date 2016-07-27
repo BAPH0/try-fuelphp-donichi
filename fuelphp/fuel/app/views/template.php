@@ -6,7 +6,9 @@
 	<?php echo Asset::css('bootstrap.min.css'); ?>
 	<?php echo Asset::css('small-business.css'); ?>
 	<style>
-		body { margin: 0px; }
+    body { margin: 0px; }
+		.row li, .row p { font-size: 16px; }
+    .row h3, .row h4 { margin-top: 30px;  }
 	</style>
 </head>
 <body>
@@ -21,7 +23,7 @@
         <ul class="nav navbar-nav">
           <li><a href="/">TopPage</a></li>
           <li><a href="#">Request</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="/tweet/about">About Us</a></li>
         </ul>
       </div>
     </div>
