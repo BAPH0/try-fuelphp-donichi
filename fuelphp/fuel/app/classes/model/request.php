@@ -26,7 +26,7 @@ class Model_Request extends Model
 	{
 		$val = Validation::forge($factory);
 		$val->add_field('body', 'Body', 'required|max_length[255]');
-		$val->add_field('ip', 'Ip', 'required|max_length[255]');
+		//$val->add_field('ip', 'Ip', 'required|max_length[255]');
 
 		return $val;
 	}

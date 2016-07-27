@@ -20,7 +20,7 @@ class Controller_Request extends Controller_Template
 			{
 				$request = Model_Request::forge(array(
 					'body' => Input::post('body'),
-					'ip' => Input::post('ip'),
+					'ip' => Input::ip(),
 				));
 
 				if ($request and $request->save())
